@@ -47,7 +47,7 @@ int main(void){
 
     adjacent = abs(s1 - s2);
     if( adjacent < 2 || adjacent == noVertices - 1){
-      noSides -= 3;
+      noSides -= 3h;
     }
     else if(adjacent == 2 || adjacent == noVertices - 2){
       noSides -= 4;
