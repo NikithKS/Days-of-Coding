@@ -44,7 +44,7 @@ Example Output
     9
     6
 
-
+t 
 
 """
 test = int(input())
