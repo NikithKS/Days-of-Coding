@@ -1,0 +1,91 @@
+(Code in C only)
+
+Mohan and Jeevan are playing Age of Empires. They’re noobs at the game, and are just learning the parts of the game.
+
+They don’t have any idea about the strength and weaknesses of various units in the game. So, they start creating random unites based on how cool they look to them.
+
+Both Mohan and Jeevan create a army of N units. You are given 2 arrays representing the strength of the units of both of their armies. The first array represents Mohan’s army, the second one represents Jeevan’s army.
+
+After fight begins, every soldier in either army starts going on a rampage, and starts killing every soldier of the opposite army, which has less strength. The army which destroy's the other army completely wins. 
+
+You have to find out who will win the war. Output "Mohan" if Mohan wins, "Jeevan" if Jeevan wins, "Tie" if it ends in a draw.
+
+Input:
+First line contains a single integer N.
+Second line contains N space separated integers which represent the strengths of Mohan's soldiers.
+Third line contains N space separated integers which represent the strengths of Jeevan's soldiers.
+
+Output:
+
+Single word: Mohan, Jeevan or Tie
+
+
+Sample Input:
+
+2
+1 5
+5 1
+
+Output:
+	Tie
+
+Sample Input:
+4
+5 6 3 1
+10 1 3 6
+
+Output:
+	Jeevan
+
+Sample Input:
+3
+15 20 50
+8 3 17
+
+Output:
+	Mohan
+
+
+Constraints:
+	1<=N<=1000
+	1<=N<=10^5
+
+
+
+
+
+
+
+
+
+
+
+(Language is your choice)
+
+Consider the same condition as previous question. 
+
+You are given 2 arrays of length N representing the strength of the units of 2 armies. The first array represents Mohan’s army, the second one represents Jeevan’s army. Find out how many soldiers of winning side will be alive given that losing army killed all the soldiers that they could kill. If it's a tie display 0.
+
+
+Sample Input:
+
+2
+1 5
+5 1
+
+Output:
+	0
+
+Sample Input:
+4
+5 6 3 1
+10 1 3 6
+
+Output:
+	2
+
+
+Constraints:
+	1<=N<=1000
+	1<=N<=10^5
+
