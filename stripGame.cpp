@@ -19,7 +19,7 @@ int main(){
                     twoLong = false;
                 }
                 else if (zeros == longest){
-                    twoLong = true;
+                    twoLong = true;-++
                 }
             }
             else{
