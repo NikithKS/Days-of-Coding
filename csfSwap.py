@@ -20,7 +20,7 @@ while(test):
         right -= i
         if(left == right):
             ans += (i * (i - 1)) >> 1
-            ans += ((n - i + 1) * (n - i)) >> 1
+            ans += ((n - i - 1) * (n - i)) >> 1
             continue            
         shift = right - half
         if(1 + shift > i and 1 + shift <= n):
@@ -29,11 +29,9 @@ while(test):
             else:
                 ans += n - i
         
-        else:
-            if(i + 1 - shift <= i and i + 1 - shift > 0):
-                if(n - shift <= i and n > shift):
-                    ans += n - i
-                else:
-                    ans += i
-        print(i, ans, shift)
+        elif(i + 1 - shift <= i and i + 1 - shift > 0):
+            if(n - shift <= i and n > shift):
+                ans += n - i
+            else:
+                ans += i
     print(int(ans))
