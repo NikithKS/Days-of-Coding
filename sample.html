@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #d1faff;
+      }
+
+      .header {
+        border-bottom: 3px solid #a4036f;
+        margin: auto 15px;
+      }
+
+      p.thicker {
+        font-weight: 900;
+        text-align: center;
+        color: #083255;
+      }
+      .searchBlock * {
+        box-sizing: border-box;
+      }
+
+      .searchBlock {
+        display: block;
+        overflow: auto;
+      }
+
+      .searchBar input {
+        padding: 10px;
+        font-size: 17px;
+        float: left;
+        width: 80%;
+        margin-bottom: 10px;
+        background: #f1f1f1;
+        border: 3px solid transparent;
+      }
+
+      .searchBar input:focus {
+        border-color: #a4036f;
+      }
+
+      .searchBar button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #a4036f;
+        border: 3px solid #a4036f;
+        color: white;
+        font-size: 17px;
+        border-left: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+
+      .searchBar button:hover {
+        background: #bf0603;
+        border-color: #bf0603;
+      }
+
+      .resultHead {
+        display: block;
+        width: 100%;
+        color: #083255;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .bodyBox {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+
+      .resultBlock {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        max-width: 740px;
+      }
+
+      .resultTitle {
+        display: block;
+        color: #083255;
+        width: 100%;
+      }
+
+      .ratingBlock {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 0px 7px;
+        border: 3px solid #a4036f;
+        margin: 10px;
+        border-radius: 5px;
+      }
+
+      .resultContent {
+        display: flex;
+        flex-flow: row;
+      }
+
+      .rating {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+      }
+
+
+      .upvoteBlock {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1><p class="thicker">Movie Review Application</p></h1>
+      
+      <div class="searchBlock">
+        <form
+        class="searchBar"
+        action="/search"
+        style="margin: auto; max-width: 400px"
+        method="POST"
+        >
+        <input
+        id="movie"
+          type="text"
+          placeholder="Search your fav movie here"
+          name="search2"
+          required
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <h2 class="resultHead">Search result:</h2>
+    <div class="bodyBox">
+      <div class="resultBlock">
+        <h3 class="resultTitle">Tit1e</h3>
+        <div class="resultContent">
+          <div class="ratingBlock">
+            <h1 class="rating">3.7</h1>
+            <p class="ratingText"><strong>rating</strong></p>
+          </div>
+          <h5 class="resultDesc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            tempus eu ex id laoreet. Aenean quis turpis non nibh bibendum
+            dignissim. Curabitur sit amet ligula et massa convallis elementum.
+            Morbi eleifend tellus nec vulputate tristique. Nunc sed luctus
+            augue. In sed ante urna. In faucibus venenatis eros, non
+            pellentesque ante scelerisque nec. Donec lectus massa, ornare ac
+            maximus in, congue ut purus.
+          </h5>
+        </div>
+
+          <div class="upvoteBlock">
+            <img class="upvoteIcon" src="" alt="" />
+            <div class="upvoteCount">Votes: 420</div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
